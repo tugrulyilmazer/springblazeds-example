@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>Spring BlazeDS - Classroom Web</display-name>
+  <description>Classroom project</description>
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+  </listener>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:applicationContext.xml</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>flex</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>/WEB-INF/flex-servlet.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>flex</servlet-name>
+    <url-pattern>/flex/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>flex-rds</servlet-name>
+    <servlet-class>flex.rds.server.servlet.FrontEndServlet</servlet-class>
+    <init-param>
+      <param-name>useAppserverSecurity</param-name>
+      <param-value>false</param-value>
+    </init-param>
+    <init-param>
+      <param-name>messageBrokerId</param-name>
+      <param-value>_messageBroker</param-value>
+    </init-param>
+    <load-on-startup>10</load-on-startup>
+  </servlet>
+  <servlet-mapping id="RDS_DISPATCH_MAPPING">
+    <servlet-name>flex-rds</servlet-name>
+    <url-pattern>/CFIDE/main/ide.cfm</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

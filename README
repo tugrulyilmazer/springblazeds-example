@@ -1,0 +1,21 @@
+--------------------------------
+Spring BlazeDS Classroom Example
+--------------------------------
+
+Note that this project is developed to demonstrate how spring integration of blazeds is made:
+	- This example project is demonstrated for spring-blazeds-classroom-flex project 
+	  to communicate with backend through blazeds. After you build the project 
+	  with maven and then execute test code, sample data is imported to HSQL database,
+	  runs the test code and finally drops created tables.
+
+How to build project:
+	- mvn clean package
+	- Copy target/spring-blazeds-classroom-1.0.0.war to your tomcat webapps directory.
+	- Execute catalina run under bin directory of tomcat to start the server.
+	- If you shutdown the server (by pressing Ctrl+C), all created tables are dropped from HSQL db.
+
+How to test project:
+	- mvn clean test
+
+For further questions, please send an email to:
+	sotuzun@gmail.com
