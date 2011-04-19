@@ -46,12 +46,12 @@
 			<timezone>GMT+2</timezone>
 		</developer>
 	</developers>
-	
+
 	<scm>
 		<url>https://github.com/sotuzun/springblazeds-example</url>
-        <connection>git@github.com:sotuzun/springblazeds-example.git</connection>
-        <developerConnection>git@github.com:sotuzun/springblazeds-example.git</developerConnection>
-    </scm>
+		<connection>git@github.com:sotuzun/springblazeds-example.git</connection>
+		<developerConnection>git@github.com:sotuzun/springblazeds-example.git</developerConnection>
+	</scm>
 	
 	<dependencies>
 		<!-- web -->
