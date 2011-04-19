@@ -38,13 +38,20 @@
 		<developer>
 			<id>sotuzun</id>
 			<name>Sabri Onur Tuzun</name>
+			<url>http://blog.sotuzun.com</url>
 			<email>sotuzun@gmail.com</email>
 			<roles>
-				<role>Software Engineer</role>
+				<role>developer</role>
 			</roles>
 			<timezone>GMT+2</timezone>
 		</developer>
 	</developers>
+	
+	<scm>
+		<url>https://github.com/sotuzun/springblazeds-example</url>
+        <connection>git@github.com:sotuzun/springblazeds-example.git</connection>
+        <developerConnection>git@github.com:sotuzun/springblazeds-example.git</developerConnection>
+    </scm>
 	
 	<dependencies>
 		<!-- web -->
@@ -392,5 +399,5 @@
 			</snapshots>
 		</repository>
 	</repositories>
-
+	
 </project>
