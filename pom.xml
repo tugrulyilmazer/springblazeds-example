@@ -52,7 +52,7 @@
 		<connection>git@github.com:sotuzun/springblazeds-example.git</connection>
 		<developerConnection>git@github.com:sotuzun/springblazeds-example.git</developerConnection>
 	</scm>
-	
+
 	<dependencies>
 		<!-- web -->
 		<dependency>
