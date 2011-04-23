@@ -337,6 +337,11 @@
 	
 	<repositories>
 		<repository>
+			<id>sinusgear</id>
+			<name>SinusGear repo</name>
+			<url>http://maven.sinusgear.com/maven_repo/</url>
+		</repository>
+		<repository>
 			<id>flex-mojos-repository</id>
 			<url>http://repository.sonatype.org/content/groups/public</url>
 			<releases>
