@@ -10,7 +10,7 @@ Note that this project is developed to demonstrate how spring integration of bla
 
 How to build project:
 	- mvn clean package
-	- Copy target/spring-blazeds-classroom-1.0.0.war to your tomcat webapps directory.
+	- Copy target/springblazeds-example-*.war to your tomcat webapps directory.
 	- Execute catalina run under bin directory of tomcat to start the server.
 	- If you shutdown the server (by pressing Ctrl+C), all created tables are dropped from HSQL db.
 
