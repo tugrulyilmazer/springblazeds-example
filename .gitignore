@@ -6,8 +6,8 @@ WebRoot/WEB-INF/classes
 WebRoot/WEB-INF/lib/*
 
 # eclipse files and directories
-#.classpath
-#.project
-#.settings
-#.metadata
-#bin
+.classpath
+.project
+.settings
+.metadata
+bin
