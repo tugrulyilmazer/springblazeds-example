@@ -11,3 +11,7 @@ WebRoot/WEB-INF/lib/*
 .settings
 .metadata
 bin
+
+# myeclipse files and directories
+.myeclipse
+.mymetadata
